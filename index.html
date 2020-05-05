@@ -1,0 +1,112 @@
+ <style>
+     * {
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+     }
+
+     html {
+         scroll-behavior: smooth !important;
+     }
+
+     :root {
+         --blue: #007bff;
+         --indigo: #6610f2;
+         --purple: #6f42c1;
+         --pink: #e83e8c;
+         --red: #dc3545;
+         --orange: #fd7e14;
+         --yellow: #ffc107;
+         --green: #008f83;
+     }
+
+     html,
+     body {
+         min-width: 290px;
+         color: #4d4e53;
+         background-color: #ffffff;
+         font-family: Avenir, "Open Sans", Arial, sans-serif;
+         line-height: 1.5;
+     }
+
+
+     a {
+         cursor: pointer !important;
+     }
+
+     .container {
+         max-width: 1170px;
+         padding: 0 15px;
+         margin: 0 auto;
+     }
+
+     @media (max-width:1000px) {}
+
+     @media (max-width: 40em) {
+         #features {
+             margin-top: 0;
+         }
+     }
+
+     nav {
+         position: fixed;
+         top: 0;
+     }
+
+     .price-wrap {
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+     }
+
+ </style>
+
+
+
+ <header id="header">
+     <img id="header-img" style="width: 300px" src="https://marianimari.github.io/PROJEK-TIM-F26/images/mari.jpg" 　>
+         <a href="#about" class="nav-link">
+             About
+         </a>
+         <a href="#feature" class="nav-link">
+             Video
+         </a>
+         <a href="#pricing" class="nav-link">
+             Pricing
+         </a>
+         <a href="#contact" class="nav-link">
+             Contact
+         </a>
+     </nav>
+
+ </header>
+ <section id="about">
+
+     <iframe id="video" height="415" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+ </section>
+ <section id="feature">
+
+ </section>
+ <section id="pricing">
+     <div class="price-wrap">
+
+     </div>
+ </section>
+ <section id="contact">
+     <form id="form" action="https://www.freecodecamp.com/email-submit">
+         <div class="row">
+             <div class="label">
+                 <label id="email-label" for="email">Email</label>
+             </div>
+             <div class="input-wraper">
+                 <input type="email" name="email" id="email" placeholder="Please enter your email" required />
+             </div>
+         </div>
+         <div class="row">
+             <input id="submit" type="submit" value="Get Started" class="btn" />
+         </div>
+
+
+     </form>
+
+ </section>
