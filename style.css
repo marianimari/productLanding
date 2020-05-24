@@ -20,6 +20,7 @@
          background-color: #ffffff;
          font-family: Avenir, "Open Sans", Arial, sans-serif;
          line-height: 1.5;
+         margin: 0;
      }
 
      .container {
@@ -33,8 +34,10 @@
          height: 80px;
          padding: 10px 20px;
          position: fixed;
-         background-color: transparent;
-
+         top: 0;
+         background-color: rgba(255, 255, 255, 0.98);
+                  box-shadow: 0px 5px 5px rgba(137, 178, 165, 0.06);
+         /*    z-index: 99;*/
      }
 
      #header-img {
@@ -88,8 +91,9 @@
 
      .main-wrap {
          float: left;
-         height: 900px;
+         height: auto;
          width: 100%;
+         padding-bottom: 70px;
      }
 
      .main-wrap img {
@@ -118,11 +122,12 @@
          display: flex;
      }
 
-     input#email-subs {
+     input.email-subs {
          height: 45px;
          padding: 10px;
          width: 255px;
          border: 1px solid var(--green);
+         border-radius: 0;
      }
 
      .btn#submit-subs {
@@ -135,18 +140,242 @@
          padding: 10px 20px;
      }
 
-     @media (max-width:1000px) {}
+     /*heading*/
+     h1.title {
+         text-align: center;
+         margin: 50px auto;
+         font-size: 25px;
+     }
+
+     /*about section*/
+     .about-wrap {
+         background-color: var(--greenLight);
+         float: left;
+         width: 100%;
+     }
+
+     .about-left {
+         width: 50%;
+         float: left;
+         padding: 50px;
+     }
+
+     .about-right {
+         width: 50%;
+         float: left;
+         padding: 50px;
+
+     }
+
+     /*feature section*/
+     .feature-wrap {
+         float: left;
+         width: 100%;
+
+     }
+
+     .featureItem-wrap {
+         display: flex;
+         flex-wrap: wrap;
+         padding-bottom: 50px;
+         justify-content: center;
+     }
+
+     .featureItem {
+         width: 30%;
+         padding: 30px;
+     }
+
+     .featureItem img {
+         width: auto;
+         height: 80px;
+         display: block;
+         margin: auto;
+     }
+
+     /*pricing section*/
+
+     .price-wrap {
+         background-color: var(--greenLight);
+         float: left;
+         width: 100%;
+         padding-bottom: 200px;
+
+     }
+
+     .pricingItem-wrap {
+         display: flex;
+         flex-wrap: wrap;
+         padding-bottom: 50px;
+         justify-content: center;
+     }
+
+     .priceItem {
+         text-align: center;
+         background-color: white;
+         border-radius: 10px;
+         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.06);
+         margin: 11px;
+         width: 20%;
+         padding: 15px;
+     }
+
+     .priceItem p {
+         text-align: justify;
+     }
+
+     p.price {
+         color: #EA7E80;
+         font-size: 22px;
+         text-align: center;
+     }
+
+     span.fa {
+         margin-right: 10px;
+         color: var(--green);
+     }
+
+     .button-price {
+         background-color: var(--green);
+         color: white;
+         height: 30px;
+         width: 100px;
+         padding: 5px 30px;
+         text-decoration: none;
+         border-radius: 50px;
+         margin: auto;
+         margin-bottom: 10px;
+         display: block;
+         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.06);
+     }
+
+     /*
+contact section
+*/
+     .contact-wrap {
+         background-color: var(--green);
+         float: left;
+         width: 100%;
+     }
+
+     .contact-left {
+         float: left;
+         width: 50%;
+     }
+
+     .contact-right {
+         float: left;
+         width: 50%;
+         padding: 20px;
+         color: white;
+         text-align: justify;
+     }
+
+     .contact-right h1 {
+         text-align: justify;
+     }
+
+     .contact-right span {
+         color: #395a2f;
+     }
+
+     .contact-card {
+         text-align: justify;
+         background-color: white;
+         border-radius: 10px;
+         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.06);
+         width: 70%;
+         padding: 15px;
+         float: right;
+         margin-top: -100px;
+         margin-bottom: 80px;
+     }
+
+     input {
+         padding: 15px;
+         width: 100%;
+         margin-bottom: 15px;
+         background-color: var(--greenLight);
+         color: black;
+         border: none;
+         outline: none;
+         border-radius: 5px;
+         border: rgba(207, 207, 207, 0.4) 1px solid;
+     }
+
+     textarea {
+         padding: 15px;
+         width: 100%;
+         margin-bottom: 15px;
+         background-color: var(--greenLight);
+         color: black;
+         border: none;
+         outline: none;
+         border-radius: 5px;
+         border: rgba(207, 207, 207, 0.4) 1px solid;
+     }
+
+     .btn-send {
+         background-color: var(--green);
+         color: white;
+         font-weight: 500;
+         font-size: 18px;
+         border-radius: 100px;
+     }
+
+     .btn-send:hover {
+         background-color: white;
+         color: var(--green);
+         border: var(--green) 1px solid;
+         cursor: pointer;
+     }
+
+     .label {
+         color: #737373;
+     }
+
+     @media (max-width:1000px) {
+         .main-wrap img {
+             margin-top: 100px;
+         }
+
+         .main-right {
+             padding: 100px 10px 10px 10px;
+         }
+
+         .priceItem {
+             width: 29%;
+         }
+
+         .contact-card {
+             width: 100%;
+         }
+
+     }
 
      @media (max-width: 40em) {
          #features {
              margin-top: 0;
          }
-     }
-
-
-
-     .price-wrap {
-         display: flex;
-         flex-direction: row;
-         justify-content: center;
+         .main-left, .main-right,  .about-left,   .about-right, .contact-left, .contact-right, .featureItem, .priceItem {
+             width: 100%;
+         }
+         #header-img{
+             margin-left: 0;
+         }
+         nav{
+             display: none;
+         }
+         .main-right{
+             padding-top:0; 
+         }
+         .contact-card{
+             margin-bottom: 0;
+         }
+         .about-right, .about-left{
+             padding: 0 15px 20px 15px;
+         }
+         #video{
+                 width: 100%;
+         }
      }
